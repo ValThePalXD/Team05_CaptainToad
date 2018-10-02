@@ -31,7 +31,7 @@ public class CameraScript : MonoBehaviour {
 
     void RotateCam()
     {
-        AnchorPointTransform.Rotate(new Vector3(0,Input.GetAxis("Horizontal"),0) *RotationSpeed*Time.deltaTime);
+        AnchorPointTransform.Rotate(new Vector3(0,-Input.GetAxis("Horizontal"),0) *RotationSpeed*Time.deltaTime);
         //VertAnchorTransform.Rotate(new Vector3(Input.GetAxis("Vertical"),0,0)*RotationSpeed*Time.deltaTime);
 
         //vertical rotation
